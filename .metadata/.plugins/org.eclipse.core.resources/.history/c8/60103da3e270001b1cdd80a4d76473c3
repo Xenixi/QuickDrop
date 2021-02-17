@@ -1,0 +1,11 @@
+package com.xenixi.games.quickdrop;
+
+public class QuickDrop {
+	static final long VERSIONID = 10L;
+	public static void main(String[] args) {
+		
+		System.out.println("Starting quickdrop version '" + VERSIONID/10 + "'");
+		
+		
+	}
+}

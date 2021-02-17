@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;com.xenixi.games.quickdrop.GameFrame&apos; to &apos;CoreEngine&apos;&#x0D;&#x0A;- Original project: &apos;QuickDrop&apos;&#x0D;&#x0A;- Original element: &apos;com.xenixi.games.quickdrop.GameFrame&apos;&#x0D;&#x0A;- Renamed element: &apos;com.xenixi.games.quickdrop.CoreEngine&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;GameFrame&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;com.xenixi.games.quickdrop{GameFrame.java[GameFrame" matchStrategy="1" name="CoreEngine" qualified="false" references="true" similarDeclarations="false" stamp="1613541592449" textual="false" version="1.0"/>
+</session>

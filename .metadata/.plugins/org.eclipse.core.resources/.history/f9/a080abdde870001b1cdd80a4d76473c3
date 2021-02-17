@@ -1,0 +1,80 @@
+package com.xenixi.games.quickdrop;
+
+import java.awt.BorderLayout;
+import java.awt.Color;
+import java.awt.Dimension;
+import java.awt.Toolkit;
+import java.util.Calendar;
+
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+
+public class CoreEngine extends JFrame{
+
+	private static final long serialVersionUID = 10L;
+	boolean loop = true;
+	
+	JPanel panel = new JPanel();
+	
+	public CoreEngine() {
+		setVisible(true);
+		setDefaultCloseOperation(EXIT_ON_CLOSE);
+
+		Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
+		setSize(screenSize.width/3,screenSize.height/3 );
+		setLocation(screenSize.width/6, screenSize.height/6);
+		
+		initFrame();
+		
+		onStart();
+		Calendar c = Calendar.getInstance();
+		long previous = c.getTimeInMillis();
+		
+		while(true) {
+			
+			update((c.getTimeInMillis()-previous));
+			}
+		
+		
+		
+		
+	}
+	private void initFrame() {
+		
+		this.setLayout(new BorderLayout());
+		this.add(panel, BorderLayout.CENTER);
+		
+		panel.setBackground(new Color(20,20,26));
+		panel.setLayout(null);
+	}
+	
+	public void onStart() {
+		
+	}
+	
+	public void onDisable() {
+		
+	}
+	
+	public void update(long deltaTime) {
+		
+	}
+	
+	public void disable() {
+		loop = false;
+		System.out.println("Disabling Engine...");
+		this.setVisible(false);
+		onDisable();
+		
+	}
+	
+	public GameObject createObject(GameObject o) {
+		
+		return o;
+	}
+	
+	
+	
+	
+	
+}

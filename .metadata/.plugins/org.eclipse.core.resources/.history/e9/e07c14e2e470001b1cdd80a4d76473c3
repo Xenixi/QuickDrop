@@ -1,0 +1,27 @@
+package com.xenixi.games.quickdrop;
+
+import java.awt.Dimension;
+import java.awt.Toolkit;
+
+import javax.swing.SwingUtilities;
+import javax.swing.UIManager;
+
+public class QuickDrop {
+	public static final long VERSIONID = 10L;
+	public static void main(String[] args) {
+		
+		System.out.println("Starting quickdrop version '" + (double)VERSIONID/10 + "'");
+		
+		SwingUtilities.invokeLater(new Runnable() {
+			public void run() {
+				UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
+				GameFrame g = new GameFrame();
+				Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
+				g.setSize(screenSize.width/3,screenSize.height/3 );
+				g.setLocation(screenSize.width/6, screenSize.hsight/6);
+				
+			}
+		});
+		
+	}
+}

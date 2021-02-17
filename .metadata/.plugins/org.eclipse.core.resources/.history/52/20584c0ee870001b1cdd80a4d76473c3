@@ -1,0 +1,9 @@
+package com.xenixi.games.quickdrop.objects;
+
+import java.awt.Point;
+
+public class GameObject {
+	String objectID;
+	Point position;
+	
+}

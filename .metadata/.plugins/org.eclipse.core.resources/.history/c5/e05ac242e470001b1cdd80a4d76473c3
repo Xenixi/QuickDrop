@@ -1,0 +1,17 @@
+package com.xenixi.games.quickdrop;
+
+import javax.swing.JFrame;
+
+public class GameFrame extends JFrame{
+
+	private static final long serialVersionUID = 10L;
+	
+	public GameFrame() {
+		setVisible(true);
+		setDefaultCloseOperation(EXIT_ON_CLOSE);
+		
+	}
+	
+	
+	
+}

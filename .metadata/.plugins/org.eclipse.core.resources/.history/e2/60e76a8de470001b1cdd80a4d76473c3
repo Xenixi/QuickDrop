@@ -1,0 +1,31 @@
+package com.xenixi.games.quickdrop;
+
+import java.awt.BorderLayout;
+
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+
+public class GameFrame extends JFrame{
+
+	private static final long serialVersionUID = 10L;
+	
+	JPanel panel = new JPanel();
+	
+	public GameFrame() {
+		setVisible(true);
+		setDefaultCloseOperation(EXIT_ON_CLOSE);
+		
+		initFrame();
+		
+		
+		
+	}
+	private void initFrame() {
+		
+		this.setLayout(new BorderLayout());
+		this.add(panel, BorderLayout.CENTER);
+	}
+	
+	
+	
+}

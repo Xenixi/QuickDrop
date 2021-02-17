@@ -1,0 +1,7 @@
+package com.xenixi.games.quickdrop;
+
+public class QuickDrop {
+	public static void main(String[] args) {
+		
+	}
+}

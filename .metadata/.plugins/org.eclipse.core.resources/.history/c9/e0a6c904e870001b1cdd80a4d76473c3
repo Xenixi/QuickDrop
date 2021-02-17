@@ -1,0 +1,6 @@
+package com.xenixi.games.quickdrop.objects;
+
+public class GameObject {
+	String objectID;
+	
+}

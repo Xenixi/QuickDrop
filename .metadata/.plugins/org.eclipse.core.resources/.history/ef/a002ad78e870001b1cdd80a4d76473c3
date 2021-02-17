@@ -1,0 +1,18 @@
+package com.xenixi.games.quickdrop.objects;
+
+import java.awt.Point;
+
+public class GameObject {
+	String objectID;
+	Point position;
+	boolean visible;
+	boolean moveable;
+	boolean activated;
+	public GameObject(String objectID) {
+		this.objectID = objectID;
+		visible = true;
+		moveable = true;
+		activated = true;
+	}
+	
+}
